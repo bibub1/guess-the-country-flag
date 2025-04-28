@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Country Flag</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Guess the Country Flag</h1>
+  <label for="difficulty">Select Difficulty:</label>
+  <select id="difficulty">
+    <option value="easy">Easy (4 options)</option>
+    <option value="medium">Medium (6 options)</option>
+    <option value="hard">Hard (8 options)</option>
+  </select>
+
+  <div class="flag-container" id="flagContainer">
+    <img id="flagImage" src="" alt="Country Flag">
+  </div>
+  <div class="options" id="optionsContainer"></div>
+
+  <div class="result" id="resultText"></div>
+  <div class="score" id="scoreText">Score: 0</div>
+  <button class="next-btn" id="nextBtn">Next Flag</button>
+
+  <div id="timerBar" style="width: 100%; max-width: 300px; height: 10px; background: #ddd; margin-top: 10px;">
+    <div id="timerFill" style="height: 100%; width: 100%; background-color: #ff4136;"></div>
+  </div>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
